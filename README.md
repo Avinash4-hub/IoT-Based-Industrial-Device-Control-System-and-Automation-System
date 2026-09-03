@@ -6,9 +6,11 @@ To remotely control industrial devices using IoT technology.
 To monitor device status and automate device operation to reduce manual intervention and improve efficiency.
 
 3. Abstract
+
 The IoT Based Industrial Device Control and Automation System is designed to remotely control and monitor industrial devices using IoT technology. The system uses an LPC2129 microcontroller to receive control commands through a communication interface. Based on the received commands, the microcontroller controls the connected devices and displays their ON/OFF status on an LCD. This system reduces manual intervention, saves time, and provides a simple and efficient method for industrial device control and automation.
 
-4. Problem Identification
+5. Problem Identification
+ 
 Existing problems:
 Industrial devices are commonly operated manually.
 The operator needs to be physically present to control the devices.
@@ -18,15 +20,20 @@ Conventional systems have limited remote-control capability.
 There is a need for simple and efficient automated device control.
 
 6. Proposed Method
+   
 The proposed system uses IoT technology to provide remote control and monitoring of industrial devices. The user sends a control command through the IoT/communication interface. The command is received by the LPC2129 microcontroller through UART0. The microcontroller identifies the command and controls the corresponding device through an output/relay interface. The device status is displayed on the LCD. This provides remote control, status monitoring, and automation with reduced human intervention.
 
 Basic operation
+
 User → IoT → UART → LPC2129 → Relay/Output → Industrial Device
+
 and
 LPC2129 → LCD → Device Status
 
 6. Hardware Components
+   
 Component	Purpose
+
 LPC2129 Microcontroller	Main controller of the system
 IoT/Wi-Fi Communication Module	Provides communication with the remote user/system
 UART0	Serial communication between the controller and communication module
@@ -73,6 +80,7 @@ Connecting Wires	Used for electrical connections
    First, the user sends a command through the IoT application. The command is transmitted through the Internet to the IoT or Wi-Fi communication module. The communication module sends the command to the LPC2129 through UART0. The LPC2129 processes the received command and controls the corresponding industrial device through the relay or driver circuit. At the same time, the LCD displays the current status of the devices.”
    
 9. Software Components
+    
 Embedded C
 Keil µVision
 LPC2129
@@ -80,10 +88,12 @@ UART0 programming
 GPIO programming
 LCD interfacing
 
-10. Working Principle
+11. Working Principle
+
+
 The system starts by initializing the LPC2129 GPIO, UART0, and LCD. The user sends a command through the IoT communication interface. The LPC2129 receives the command through UART0 and compares it with predefined commands. According to the received command, the corresponding device is switched ON or OFF. The device status is then displayed on the LCD. This process continues continuously.
 
-Your actual command mapping
+
 Command	Action
 A	Bulb 1 ON
 a	Bulb 1 OFF
@@ -95,7 +105,9 @@ D	Bulb 4 ON
 d	Bulb 4 OFF
 
 
-10. Expected/Obtained Outpu
+10. Expected/Obtained Output
+
+    
 LCD can display:
 IOT BASED INDUSTRIAL
 DEVICE CONTROL AND
@@ -111,6 +123,8 @@ BULB4: OFF
 
 
 11. Advantages
+
+    
 Remote device control
 Reduced manual intervention
 Easy monitoring
@@ -121,6 +135,8 @@ Expandable for additional devices
 Suitable for industrial automation
 
 13. Applications
+
+    
 Factory automation
 Industrial device control
 Motor control
@@ -130,7 +146,9 @@ Industrial lighting
 Machine monitoring
 Smart building automation
 
-14. Future Scope
+15. Future Scope
+
+    
 Add more industrial sensors
 Add temperature/current monitoring
 Add fault detection
@@ -139,6 +157,7 @@ Add mobile notifications
 Add cloud data storage
 Implement AI-based predictive maintenance
 Improve system security
-15. Conclusion
+
+17. Conclusion
 
 The IoT Based Industrial Device Control and Automation System provides a simple and efficient method for remotely controlling industrial devices. The LPC2129 acts as the main controller, receives commands through UART0, controls the connected devices, and displays their status on the LCD. The system reduces manual intervention and provides a foundation for future industrial IoT and automation applications.
