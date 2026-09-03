@@ -2,12 +2,10 @@
 IoT-Based Industrial Device Control and Automation System using LPC2129. The system enables remote control and monitoring of industrial devices through IoT communication. UART is used for command reception, while the LPC2129 controls devices and displays their ON/OFF status on an LCD, reducing manual intervention and improving automation
 2. Objectives
 
-Keep only 2 clear points:
-
 To remotely control industrial devices using IoT technology.
 To monitor device status and automate device operation to reduce manual intervention and improve efficiency.
-3. Abstract
 
+3. Abstract
 The IoT Based Industrial Device Control and Automation System is designed to remotely control and monitor industrial devices using IoT technology. The system uses an LPC2129 microcontroller to receive control commands through a communication interface. Based on the received commands, the microcontroller controls the connected devices and displays their ON/OFF status on an LCD. This system reduces manual intervention, saves time, and provides a simple and efficient method for industrial device control and automation.
 
 4. Problem Identification
@@ -18,16 +16,13 @@ Continuous monitoring requires human involvement.
 Manual operation can cause errors and consume more time.
 Conventional systems have limited remote-control capability.
 There is a need for simple and efficient automated device control.
-5. Proposed Method
 
+6. Proposed Method
 The proposed system uses IoT technology to provide remote control and monitoring of industrial devices. The user sends a control command through the IoT/communication interface. The command is received by the LPC2129 microcontroller through UART0. The microcontroller identifies the command and controls the corresponding device through an output/relay interface. The device status is displayed on the LCD. This provides remote control, status monitoring, and automation with reduced human intervention.
 
 Basic operation
-
 User → IoT → UART → LPC2129 → Relay/Output → Industrial Device
-
 and
-
 LPC2129 → LCD → Device Status
 
 6. Hardware Components
@@ -40,7 +35,8 @@ Relay Module	Switches industrial devices ON/OFF
 Industrial Devices/Loads	Devices being controlled, such as bulbs, motors, or fans
 Power Supply	Provides required power to the circuit
 Connecting Wires	Used for electrical connections
-7. Block Diagram
+
+8. Block Diagram
    
                   ┌──────────────────┐
                   │       USER       │
