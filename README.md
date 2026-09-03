@@ -41,6 +41,7 @@ Industrial Devices/Loads	Devices being controlled, such as bulbs, motors, or fan
 Power Supply	Provides required power to the circuit
 Connecting Wires	Used for electrical connections
 7. Block Diagram
+   
                   ┌──────────────────┐
                   │       USER       │
                   │ Mobile / Web App │
