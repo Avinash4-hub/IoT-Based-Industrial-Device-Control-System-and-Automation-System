@@ -1,0 +1,2 @@
+# IoT-Based-Industrial-Device-Control-System-and-Automation-System
+IoT-Based Industrial Device Control and Automation System using LPC2129. The system enables remote control and monitoring of industrial devices through IoT communication. UART is used for command reception, while the LPC2129 controls devices and displays their ON/OFF status on an LCD, reducing manual intervention and improving automation
